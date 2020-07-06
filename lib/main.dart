@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/homepage.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,18 +8,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primaryColor: Color(0xffffffff),
+        accentColor: Color(0xfff62e2e),
+      ),
       home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("Hi"),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
